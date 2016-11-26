@@ -67,7 +67,7 @@ function pintarTodasPeliculas( no__peliculas,_searchObj){
 							   	'<img src="./img/'+_peliculas[i].img+'" class="img-rounded miniaturas"><br>'+
 							   	_peliculas[i].titulo+'</br>'+
 							   	_peliculas[i].genero+'</br>'+
-							   	_peliculas[i].anio+'</br>'+
+							   	' y es del año '+_peliculas[i].anio+'</br>'+
    								'</div>');		
 		}
 	}
