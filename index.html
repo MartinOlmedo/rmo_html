@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" href=".\bootstrap\css\bootstrap.min.css">
+    <link rel="stylesheet" href=".\css\misEstilos.css">
+  </head>
+  <body>
+  	<div id="loading">
+	  <img id="loading-image" src="./img/loading.gif" class="loading" alt="Loading..." />
+	</div>
+
+  	<div class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="google.es">WebSiteName</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li class="active"><a href="#">Home</a></li>
+	      <li><a href="abc.es">Page 1</a></li>
+	      <li><a href="elmundo.es">Page 2</a></li> 
+	      <li><a href="tmz.com">Page 3</a></li> 
+	    </ul>
+	    <ul class="nav navbar-nav navbar-right">
+	      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+	      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	    </ul>
+	  </div>
+	</div>
+
+  	<div class="container">
+		<h1>BUSCADOR DE PELICULAS</h1>
+		<p>El mejor buscador de películas en idioma español</p>   
+		<button type="button" class="btn btn-link" data-toggle="collapse" data-target="#filtroOrdenacionCollapse">Filtros y Ordenación</button>
+		<div id="filtroOrdenacionCollapse" class="collapse fieldset">
+			
+				<fieldset class="form-group">
+					<legend>Filtros y ordenación</legend>
+					  <div class="form-group">
+					    <label for="genero">Género cinematográfico:</label>
+					    <select class="form-control" id="genero"></select>
+					  </div>
+					  <div class="form-group">
+					    <label for="anio">Año emisión</label>
+					    <input type="text" class="form-control" id="anio">
+					  </div>
+					  <button class="btn btn-default" id="buscarFiltrosOrdenacion">BUSCAR</button>
+				</fieldset>	  
+			
+		</div>
+		<div class="busquedaTitulo">
+			<div class="form-group">
+			    <label for="titulo">Titulo</label>
+			    <input type="text" class="form-control busquedaTitulo" id="titulo">
+			</div>
+			<button type="submit" class="btn btn-default" id="buscarTitulo">BUSCAR (por título)</button>
+  		</div>
+  		<div id="tablaResultados">
+  			<div class="row" id="rowResults">
+			</div>
+  		</div>
+	</div>
+  	<script src=".\lib\jquery-3.1.1.min.js"></script>
+  	<script src=".\bootstrap\js\bootstrap.min.js"></script>
+  	<script src=".\js\myScript.js"></script>
+  </body>
+</html>
